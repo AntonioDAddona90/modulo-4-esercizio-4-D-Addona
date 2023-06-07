@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <linkrel="canonical"
+    href="https://getbootstrap.com/docs/4.6/examples/album/"
+  />
+    <link  rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+    crossorigin="anonym
+     ous"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar navbar-dark bg-warning shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="mr-2"
+              viewBox="0 0 24 24"
+              focusable="false"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>Book</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="main">
+        <section class="container py-5">
+        <div class="text-center my-5">
+          <input onkeyup="searchBook(event)" type="text" placeholder="Cerca..." class="form-control" />
+        </div>
+        <h1>Carrello totale: <span class="totale">0</span> EUR</h1>
+        <button class="btn btn-warning" onclick="emptyCart()"> Svuota </button>
+        <ul class="list-group">
+        </ul>
+      </section>
+      </div>
+      <div class="container">
+        <div class="row"> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1940026091">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/91xrEMcvmQL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pandemia (The Extinction Files, Libro 1)</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Pandemic (The Extinction Files, Book 1)', '7.81', '1940026091')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 7,81</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_0425264041">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/91ku%2B0LppPL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Frammenti di Speranza (Romanzo Psy-Changeling, A)</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Shards of Hope (Psy-Changeling Novel, A)', '7.59', '0425264041')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 7,59</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1250082757">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/91J28bj3PYL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nato dalla vendetta: The League: Nemesis Rising</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Born of Vengeance: The League: Nemesis Rising', '26.09', '1250082757')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 26,09</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_045146799X">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/81-vppSolJL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tabellone degli Dei</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Gameboard of the Gods', '7.59', '045146799X')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 7,59</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1101987790">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/91eGxsWGH7L.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Silenzio d'argento (Trinità che cambia la psicologia)</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Silver Silence (Psy-Changeling Trinity)', '17.6', '1101987790')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 17,6</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_0987575422">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51vw%2Bn7xZCL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La battaglia di Evernight - Edizione speciale: The Bitterbynde Book #3 (The Bitterbynde Trilogy)</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('The Battle of Evernight - Special Edition: The Bitterbynde Book #3 (The Bitterbynde Trilogy)', '9.6', '0987575422')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 9,6</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1492667137">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/514%2BSppz8AL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cacciatore notturno</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Nightchaser', '4.84', '1492667137')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 4,84</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1635551226">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/61pDS5vOIdL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Prossima Cinque</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Proxima Five', '16.34', '1635551226')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 16,34</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1773840509">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51mV63NrjdL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Il clandestino di Cyborg: In the Stars Romance (Gypsy Moth)</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('The Cyborg's Stowaway: In the Stars Romance (Gypsy Moth)', '3.73', '1773840509')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 3,73</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1732587035">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/61Q5NcIAeaL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Potere apparente: trilogia di Diazem, libro uno</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Apparent Power: Diazem Trilogy, Book One', '8.65', '1732587035')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 8,65</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1944866191">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/61yFOVwNcML.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ragazza come una bomba</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Girl Like a Bomb', '16.55', '1944866191')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 16,55</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1982609494">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/810hI5IL-HL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Polaris Rising: un romanzo</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Polaris Rising: A Novel', '24.05', '1982609494')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 24,05</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1642471003">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/61GXM097ZcL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Oltre l'orizzonte oscuro</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Across the Dark Horizon', '13.81', '1642471003')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 13,81</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1943006733">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/713wsx-exHL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Resistente: un romanzo</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Resistant: A Novel', '10.16', '1943006733')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 10,16</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_099961200X">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71qOk4tFCWL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fortunato</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Lucky', '5.73', '099961200X')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 5,73</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1632167689">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/41I3PgcCgNL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ascesa e caduta (TERZI)</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Rise &amp; Fall (THIRDS)', '11.69', '1632167689')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 11,69</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1626392242">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/812XgmsnMfL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Anticipo: Esodo: Libro Uno</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Advance: Exodus: Book One', '13.01', '1626392242')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 13.01</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1473214769">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71QzKhJ8YrL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Da Darkest Skies</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('From Darkest Skies', '13.6', '1473214769')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 13,6</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1732956308">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51EsF8PiQ9L.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Savant di caramelle</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Candy Savant', '8.27', '1732956308')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 8,27</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1496025555">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/516ZDu7nsLL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Con le spalle al muro (Sopravvivenza) (Volume 2)</font></font></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Backs Against the Wall (Survival) (Volume 2)', '6.03', '1496025555')"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EUR 6,03</font></font></button>
+                  <button class="btn btn-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nascondi</font></font></button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1509854525">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/61PVMb6YCaL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> The Charmed Life of Alex Moore </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('The Charmed Life of Alex Moore', '23.33', '1509854525')"> EUR 23.33 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_0692124578">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/41M%2BnF7VZSL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Second Life of Mr. Hunt: Book 2: Sacrifices </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Second Life of Mr. Hunt: Book 2: Sacrifices', '11.13', '0692124578')"> EUR 11.13 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_148056785X">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71f-LfPNGsL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> The Morcai Battalion: The Pursuit </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('The Morcai Battalion: The Pursuit', '5.51', '148056785X')"> EUR 5.51 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1634779150">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/41p5Lnpx4HL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Five Minutes Longer (Enhanced World) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Five Minutes Longer (Enhanced World)', '10.37', '1634779150')"> EUR 10.37 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_150234131X">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51Hpl9aPWRL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Devoured: Brides of the Kindred 11 (Volume 11) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Devoured: Brides of the Kindred 11 (Volume 11)', '5.71', '150234131X')"> EUR 5.71 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_0008120692">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51A8BmESq5L.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> The Ark (The Ark Trilogy, Book 1) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('The Ark (The Ark Trilogy, Book 1)', '9.36', '0008120692')"> EUR 9.36 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1514621363">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/61cvKNjNfvL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Hugh Howey TwinPack vol.4: Peace in Amber &amp; Promises of London </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Hugh Howey TwinPack vol.4: Peace in Amber &amp; Promises of London', '4.4', '1514621363')"> EUR 4.4 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1772265535">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71KncO7sFzL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> The Time Machine (100 Copy Limited Edition) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('The Time Machine (100 Copy Limited Edition)', '34.61', '1772265535')"> EUR 34.61 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1635334039">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/41S%2BAo5DEML.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Skythane (The Oberon Cycle) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Skythane (The Oberon Cycle)', '6.11', '1635334039')"> EUR 6.11 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1935751336">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/514pMqTVCfL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Haven </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Haven', '2.04', '1935751336')"> EUR 2.04 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1619848090">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51aW0XTqL4L.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Maskerade </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Maskerade', '4.37', '1619848090')"> EUR 4.37 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1591940613">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51%2BTgaWpuOL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> A Princess of Mars (John Carter of Mars) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('A Princess of Mars (John Carter of Mars)', '4.95', '1591940613')"> EUR 4.95 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1682810690">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71e4jNi922L.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Scardust </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Scardust', '3.17', '1682810690')"> EUR 3.17 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1487403127">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51-Q9IBcexL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Sector Guard Collection 3 </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Sector Guard Collection 3', '6.61', '1487403127')"> EUR 6.61 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1634768264">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/41OI6hZ86IL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> This Is How It Ends (Deadworld) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('This Is How It Ends (Deadworld)', '6.75', '1634768264')"> EUR 6.75 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_0446584606">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/41%2BVpF%2BzzyL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> The Claimed (Sin Hunters) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('The Claimed (Sin Hunters)', '5.08', '0446584606')"> EUR 5.08 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1644051125">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51qK7ndbbYL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Ithani: NULL (The Oberon Cycle) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Ithani: NULL (The Oberon Cycle)', '16.47', '1644051125')"> EUR 16.47 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_0648313549">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/61-lWTp2ljL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Breakaway (Verdant String) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Breakaway (Verdant String)', '6.43', '0648313549')"> EUR 6.43 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1640804773">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/41cH1OSszQL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Lander (The Oberon Cycle) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Lander (The Oberon Cycle)', '7.41', '1640804773')"> EUR 7.41 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1626493014">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51e7A-DT9fL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Fall and Rising </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Fall and Rising', '7.77', '1626493014')"> EUR 7.77 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1980570043">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51xdSzzNxmL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> The Time It Takes </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('The Time It Takes', '5.92', '1980570043')"> EUR 5.92 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1480953733">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/812vUZPbEHL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> The Birth (Soulmate Prophecy) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('The Birth (Soulmate Prophecy)', '8.77', '1480953733')"> EUR 8.77 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1732048800">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71QZ6h7qjRL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Warrior Princess of Mars (Barsoom Pentalogy) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Warrior Princess of Mars (Barsoom Pentalogy)', '10.7', '1732048800')"> EUR 10.7 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1978639392">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/61YHowAptnL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> FUSE (The Bolt Saga) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('FUSE (The Bolt Saga)', '10.49', '1978639392')"> EUR 10.49 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_0857157760">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51WFt%2BKrEZL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Subspace </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Subspace', '17.48', '0857157760')"> EUR 17.48 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_197863921X">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71mgXBZNxSL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Bolt (The Bolt Saga) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Bolt (The Bolt Saga)', '5.09', '197863921X')"> EUR 5.09 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1504778596">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/917IkbfPnsL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> River's Run (Lords of Kassis series, Book 1) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('River's Run (Lords of Kassis series, Book 1)', '4.24', '1504778596')"> EUR 4.24 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1941368107">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51KUhM9Nl1L.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Lost Time (Between Two Evils) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Lost Time (Between Two Evils)', '6.79', '1941368107')"> EUR 6.79 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1594933197">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/81veSVEr78L.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Orphan Maker </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Orphan Maker', '2.8', '1594933197')"> EUR 2.8 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div> <div class="col col-3"> <div class="card mb-4 shadow-sm" id="book_1487404239">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51rIMGEiquL.jpg">
+
+              <div class="card-body">
+                <p class="font-weight-bold text-truncate book-title"> Return of the Nine Collection </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <button class="btn btn-primary" onclick="addToCart('Return of the Nine Collection', '7.71', '1487404239')"> EUR 7.71 </button>
+                  <button class="btn btn-secondary"> Nascondi </button>
+                </div>
+              </div>
+            </div> </div></div>
+      </div>
+
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+</body>
+</html>
